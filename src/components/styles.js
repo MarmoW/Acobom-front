@@ -5,7 +5,6 @@ const Header = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
 background-color: #515151;
 width: 100%;
 height: 6em;
@@ -15,17 +14,20 @@ padding-right: 4em;
 `;
 
 const Button1 = styled.button`
+font-family: "Orbitron", sans-serif !important; 
+font-weight: 600;
+font-size: 0.8rem;    
 justify-content: center;
 align-items: center;
 background-color:#515151;
 max-height: 100%;
-margin: 2em;
-color:#ffffff;
+margin: 1.5em;
+color:#DCDCDC;
 padding:0;
 
 
 &:hover {
-    color:#737373;
+    color:#fe7100;
   }
 
 
@@ -76,7 +78,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: #f5f5f5;
     color: #333;
+    
   }
+
+  
 `;
 
 export {Header, Button1, GlobalStyles, LogoImg, Title}; 
