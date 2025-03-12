@@ -86,10 +86,37 @@ height: 25em;
 background-color: #fe7100;
 `;
 const ProductsContainer = styled.div`
+display: flex-row;  
+justify-content: center;
 background-color: #717171;
 width: 100%;
-height: 600px;
-
+box-sizing: border-box;
+margin-top: 2em;
 `;
 
-export {Header, Button1, GlobalStyles, LogoImg, Title, BannerImg, ProductsContainer}; 
+const FeaturedProduct = styled.div`
+background-color:#f15500;
+width: 100%;
+height: 400px;
+`;
+const OtherProductsDiv = styled.div`
+display: flex; 
+height: 600px;
+width: 100%;
+align-itens: space-around;
+justify-content: center;
+background-color:  #d98880 ;
+flex-wrap: wrap; 
+margin-top: 2em;
+`;
+
+const OtherProducts = styled.div`
+display: flex;
+min-width: 30%;
+height: 250px;
+margin: 15px;
+background-color:${(props) => props.bgColor || "#ccc"}
+
+`;
+export {Header, Button1, GlobalStyles, LogoImg, Title, BannerImg, ProductsContainer,
+FeaturedProduct, OtherProducts, OtherProductsDiv}; 
