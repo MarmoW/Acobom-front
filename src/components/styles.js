@@ -8,7 +8,7 @@ justify-content: space-between;
 align-items: center;
 background-color: #515151;
 width: 100%;
-height: 6em;
+height: 5.5em;
 padding-left:4em;
 padding-right: 4em;
 min-width: 100wh;
@@ -17,8 +17,7 @@ min-width: 100wh;
 
 const Button1 = styled.button`
 font-family: "Orbitron", sans-serif ; 
-font-weight: 600;
-font-size: 0.8rem;    
+font-weight: 600;  
 justify-content: center;
 align-items: center;
 background-color:#515151;
@@ -47,17 +46,34 @@ display: flex;
 justify-contet: center;
 color: #fe7100
 `;
-
+//768p => 16px, 900p => 20px , 1080p => 24px, 1440p => 28px, 2160p => 32px.
 const GlobalStyles = createGlobalStyle`  
   * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media (min-height: 900px) {
+    font-size: 20px;
+  }
+    @media (min-height: 1080px) {
+    font-size: 24px;
+  }
+    @media (min-height: 1440px) {
+    font-size: 28px;
+  }
+    @media (min-height: 2160px) {
+    font-size: 32px;
+  }
+
+    
   }
 
     html {
     font-size: 16px;
     font-family: Arial, sans-serif;
+
   }
 
   
@@ -80,9 +96,10 @@ const GlobalStyles = createGlobalStyle`
     mid-height: 100vh;
     margin: 0;
     padding: 0;
-
     background: #f5f5f5;
     color: #333;    
+
+    
 
   }
 `;
@@ -107,11 +124,11 @@ const FeaturedProduct = styled.div`
 background-color:#f15500;
 min-width: 100wh;
 width: 100%;
-height: 400px;
+height: 25em;
 `;
 const OtherProductsDiv = styled.div`
 display: flex; 
-height: 600px;
+height: 40em;
 width: 100%;
 align-itens: space-around;
 justify-content: center;
@@ -122,11 +139,17 @@ margin-top: 2em;
 
 const OtherProducts = styled.div`
 display: flex;
+background-color: #76448a;
 min-width: 30%;
-height: 250px;
-margin: 15px;
-background-color:${(props) => props.bgColor || "#ccc"}
+height: 15em;
+margin: 1em;
 
 `;
+
+const FeaturedPic = styled.div``;
+
+const OtherPic = styled.div``;
+
+
 export {Header, Button1, GlobalStyles, LogoImg, Title, BannerImg, ProductsContainer,
 FeaturedProduct, OtherProducts, OtherProductsDiv}; 

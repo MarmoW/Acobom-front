@@ -17,7 +17,7 @@ function App() {
         <Button1>Colaboradores</Button1>
         <Button1>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <AiFillInstagram size={25}/>
+            <AiFillInstagram />
             <p>Instagram</p>
           </a>
           </Button1>
@@ -27,12 +27,12 @@ function App() {
       <ProductsContainer>
         <FeaturedProduct>PRODUTO EM DESTAQUE</FeaturedProduct>
         <OtherProductsDiv>
-          <OtherProducts bgColor="#f4d03f">PRODUTOS SECUNDÁRIOS</OtherProducts>
-          <OtherProducts bgColor="#117a65">PRODUTOS SECUNDÁRIOS</OtherProducts>
-          <OtherProducts bgColor="#2874a6">PRODUTOS SECUNDÁRIOS</OtherProducts>
-          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>
-          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>
-          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>   
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts >PRODUTOS SECUNDÁRIOS</OtherProducts>   
         </OtherProductsDiv>
       </ProductsContainer>
     </div>
