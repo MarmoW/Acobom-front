@@ -23,16 +23,16 @@ function App() {
           </Button1>
         </div>
       </Header>
-      <BannerImg></BannerImg>
+      <BannerImg>BANNER</BannerImg>
       <ProductsContainer>
-        <FeaturedProduct></FeaturedProduct>
+        <FeaturedProduct>PRODUTO EM DESTAQUE</FeaturedProduct>
         <OtherProductsDiv>
-          <OtherProducts bgColor="#f4d03f"></OtherProducts>
-          <OtherProducts bgColor="#117a65"></OtherProducts>
-          <OtherProducts bgColor="#2874a6"></OtherProducts>
-          <OtherProducts bgColor="#76448a"></OtherProducts>
-          <OtherProducts bgColor="#76448a"></OtherProducts>
-          <OtherProducts bgColor="#76448a"></OtherProducts>   
+          <OtherProducts bgColor="#f4d03f">PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts bgColor="#117a65">PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts bgColor="#2874a6">PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>
+          <OtherProducts bgColor="#76448a">PRODUTOS SECUNDÁRIOS</OtherProducts>   
         </OtherProductsDiv>
       </ProductsContainer>
     </div>

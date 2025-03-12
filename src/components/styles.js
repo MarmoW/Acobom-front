@@ -11,6 +11,7 @@ width: 100%;
 height: 6em;
 padding-left:4em;
 padding-right: 4em;
+min-width: 100wh;
 
 `;
 
@@ -75,13 +76,20 @@ const GlobalStyles = createGlobalStyle`
 
  
   body {
+    min-width: 1366px;
+    mid-height: 100vh;
+    margin: 0;
+    padding: 0;
+
     background: #f5f5f5;
-    color: #333;
+    color: #333;    
+
   }
 `;
 
 const BannerImg = styled.div`
 width:100%;
+min-width: 100wh;
 height: 25em;
 background-color: #fe7100;
 `;
@@ -90,12 +98,14 @@ display: flex-row;
 justify-content: center;
 background-color: #717171;
 width: 100%;
+min-width: 100wh;
 box-sizing: border-box;
 margin-top: 2em;
 `;
 
 const FeaturedProduct = styled.div`
 background-color:#f15500;
+min-width: 100wh;
 width: 100%;
 height: 400px;
 `;
