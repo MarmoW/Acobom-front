@@ -53,25 +53,26 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 14px;
 
     @media (min-height: 900px) {
     font-size: 20px;
   }
     @media (min-height: 1080px) {
-    font-size: 24px;
+    font-size: 20px;
   }
     @media (min-height: 1440px) {
-    font-size: 28px;
+    font-size: 27px;
   }
     @media (min-height: 2160px) {
-    font-size: 32px;
+    font-size: 40px;
   }
 
     
   }
 
     html {
-    font-size: 16px;
+    
     font-family: Arial, sans-serif;
 
   }
