@@ -14,10 +14,10 @@ function App() {
         <Button1>Telhas</Button1>
         <Button1>Ferragens</Button1>
         <Button1>Fale Conosco</Button1>
-        <Button1>Colaboradores</Button1>
+        <Button1>Carreiras</Button1>
         <Button1>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <AiFillInstagram />
+            <AiFillInstagram size={"2em"}/>
             <p>Instagram</p>
           </a>
           </Button1>

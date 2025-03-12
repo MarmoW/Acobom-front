@@ -132,14 +132,14 @@ height: 40em;
 width: 100%;
 align-itens: space-around;
 justify-content: center;
-background-color:  #d98880 ;
+background-color:  #c1c1c1 ;
 flex-wrap: wrap; 
 margin-top: 2em;
 `;
 
 const OtherProducts = styled.div`
 display: flex;
-background-color: #76448a;
+background-color: #919191;
 min-width: 30%;
 height: 15em;
 margin: 1em;
