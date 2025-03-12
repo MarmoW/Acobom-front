@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
@@ -14,7 +15,7 @@ padding-right: 4em;
 `;
 
 const Button1 = styled.button`
-font-family: "Orbitron", sans-serif !important; 
+font-family: "Orbitron", sans-serif ; 
 font-weight: 600;
 font-size: 0.8rem;    
 justify-content: center;
@@ -46,27 +47,25 @@ justify-contet: center;
 color: #fe7100
 `;
 
-const GlobalStyles = createGlobalStyle`
-  /* Reset básico */
+const GlobalStyles = createGlobalStyle`  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  /* Melhorias na tipografia */
-  html {
+    html {
     font-size: 16px;
     font-family: Arial, sans-serif;
   }
 
-  /* Remover decoração de links */
+  
   a {
     text-decoration: none;
     color: inherit;
   }
 
-  /* Remover estilos padrão de botões */
+ 
   button {
     border: none;
     background: none;
@@ -74,14 +73,23 @@ const GlobalStyles = createGlobalStyle`
     font-family: inherit;
   }
 
-  /* Estilização do body */
+ 
   body {
     background: #f5f5f5;
     color: #333;
-    
   }
-
-  
 `;
 
-export {Header, Button1, GlobalStyles, LogoImg, Title}; 
+const BannerImg = styled.div`
+width:100%;
+height: 25em;
+background-color: #fe7100;
+`;
+const ProductsContainer = styled.div`
+background-color: #717171;
+width: 100%;
+height: 600px;
+
+`;
+
+export {Header, Button1, GlobalStyles, LogoImg, Title, BannerImg, ProductsContainer}; 

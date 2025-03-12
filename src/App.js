@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Button1, GlobalStyles, LogoImg, Title } from './components/styles';
+import { Header, Button1, GlobalStyles, LogoImg, Title, BannerImg, ProductsContainer } from './components/styles';
 import { AiFillInstagram } from "react-icons/ai";
 import Logo from "./Logo-acobom.png";
 
@@ -18,6 +18,8 @@ function App() {
         <Button1><AiFillInstagram size={25}/><a>Instagram</a></Button1>
         </div>
       </Header>
+      <BannerImg></BannerImg>
+      <ProductsContainer></ProductsContainer>
     </div>
   );
 }
