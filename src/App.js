@@ -24,7 +24,9 @@ function App() {
           </Button1>
         </div>
       </Header>
-      <BannerImg>BANNER</BannerImg>
+      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <BannerImg  style={{ userSelect: "none" }} src="/imgs/mock-banner1.jpg" href="google.com"/>
+      </a>
       <ProductsContainer>
         <FeaturedProduct>
           <FeaturedPic src="/imgs/mock-pic1.png" alt="Table saw"/>

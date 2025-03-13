@@ -20,7 +20,6 @@ font-family: "Orbitron", sans-serif ;
 font-weight: 600;  
 justify-content: center;
 align-items: center;
-background-color:#515151;
 max-height: 100%;
 margin: 1.5em;
 color:#DCDCDC;
@@ -105,7 +104,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const BannerImg = styled.div`
+const BannerImg = styled.img`
 width:100%;
 min-width: 100wh;
 height: 25em;
