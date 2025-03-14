@@ -11,9 +11,10 @@ height: 25em;
 padding-top: 1.5em;
 background-color: #ffffff;
 border-radius: 30px;
+padding-left: 2em;
 `;
 
-const FeatureTitle = styled.p`
+const FeaturedTitle = styled.p`
 display:flex;
 justify-content: start; 
 align-content: start;
@@ -41,9 +42,10 @@ margin-left: 1.5rem;
 const FeaturedPic = styled.img`
 display: flex;
 background-color: #7171FF;
-min-width: 32em;
-min-height: 22em;
-border-radius: 30px;
+min-width: 33em;
+min-height: 22em
+;
+
 `;
 
 export default function FeaturedComponent() {
@@ -51,7 +53,7 @@ export default function FeaturedComponent() {
         <FeaturedProduct>
           <FeaturedPic src="/imgs/mock-pic1.png" alt="Table saw"/>
           <div>
-            <FeatureTitle> Serra de Bancada 1800W 10 Pol.</FeatureTitle>
+            <FeaturedTitle> Serra de Bancada 1800W 10 Pol.</FeaturedTitle>
             <FeaturedDescription>{" A Serra de Bancada possui estrutura reforçada e de fácil configuração, e rodas para transporte e armazenamento. Com guia de auto alinhamento e guia lateral auto-alinhada garantindo mais precisão."}</FeaturedDescription>
           </div>
         </FeaturedProduct>

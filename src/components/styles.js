@@ -78,6 +78,4 @@ box-sizing: border-box;
 margin-top: 2em;  
 `;
 
-
-
 export {GlobalStyles, Title, ProductsContainer}; 
