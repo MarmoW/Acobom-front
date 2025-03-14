@@ -6,6 +6,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background-color: #515151;
+min-width: 100wh;
 width: 100%;
 height: 5.5em;
 padding-left:4em;
@@ -51,7 +52,7 @@ export default function HeaderComponent() {
           <Button1>Fale Conosco</Button1>
           <Button1>Carreiras</Button1>
           <Button1>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/acobomoficial/" target="_blank" rel="noopener noreferrer">
               <AiFillInstagram size={"2em"}/>
               <p>Instagram</p>
             </a>

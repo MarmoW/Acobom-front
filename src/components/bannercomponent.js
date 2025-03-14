@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { IoIosArrowForward, IoIosArrowBack} from "react-icons/io";
 
 const BannerImg = styled.img`
-width:100%;
 min-width: 100wh;
+width: 100%;
 height: 25em;
 background-color: #fe7100;
 `;
@@ -13,7 +13,6 @@ display:flex
 width:100%;
 min-width: 100wh;
 height: 25em;
-background-color: green;
 `;
 
 const NavButtons = styled.button`

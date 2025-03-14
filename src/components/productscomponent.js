@@ -36,7 +36,7 @@ const products = [
 const OtherProductsDiv = styled.div`
 display: flex; 
 height: 40em;
-width: 100%;
+width: 100wh;
 align-itens: space-around;
 justify-content: center;
 flex-wrap: wrap; 
@@ -100,7 +100,6 @@ export default function ProductsComponent() {
                 </div>
             </OtherProducts>
             ))}
-            
         </OtherProductsDiv>
     )
 }

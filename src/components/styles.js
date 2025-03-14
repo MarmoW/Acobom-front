@@ -54,8 +54,10 @@ const GlobalStyles = createGlobalStyle`
 
  
   body {
-    min-width: 1366px;
-    mid-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+
     margin: 0;
     padding: 0;
     background:#ebebeb ;
@@ -72,7 +74,7 @@ text-align: left;
 display: flex;
 flex-direction: column;  
 align-items: center;  
-width: 100%;
+width: 100wh;
 min-width: 100wh;
 box-sizing: border-box;
 margin-top: 2em;  
