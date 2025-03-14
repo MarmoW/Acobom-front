@@ -23,6 +23,7 @@ margin: 1em;
 border-radius: 20px;
 padding-top: 2em;
 padding-right: 1em;
+border-bottom: 0.25em solid #E1E1E1;
 
 `;
 

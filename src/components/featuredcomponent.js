@@ -12,6 +12,7 @@ padding-top: 1.5em;
 background-color: #ffffff;
 border-radius: 30px;
 padding-left: 2em;
+border-bottom: 0.25em solid #E1E1E1;
 `;
 
 const FeaturedTitle = styled.p`
