@@ -1,14 +1,32 @@
 import './App.css';
-import { Header, Button1, GlobalStyles, LogoImg, BannerImg, ProductsContainer, FeaturedProduct,
-OtherProducts, OtherProductsDiv, FeaturedPic, FeaturedDescription, FeatureTitle, OtherPic } from './components/styles';
-import { AiFillInstagram } from "react-icons/ai";
-import Logo from "./Logo-acobom.png";
+import { GlobalStyles, ProductsContainer} from './components/styles';
+import HeaderComponent from "./components/headercomponent.js";
+import BannerComponent from "./components/bannercomponent.js";
+import FeaturedComponent from "./components/featuredcomponent.js";
+import ProductsComponent from "./components/productscomponent.js";
+
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles></GlobalStyles>
-      <Header>
+      <HeaderComponent/>
+      <BannerComponent/>
+      <ProductsContainer>
+        <FeaturedComponent/>
+        <ProductsComponent/>
+      </ProductsContainer>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+/*
+<Header>
         <LogoImg  src={Logo}/>
         <div>
         <Button1>Máquinas</Button1>
@@ -24,48 +42,4 @@ function App() {
           </Button1>
         </div>
       </Header>
-      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-        <BannerImg  style={{ userSelect: "none" }} src="/imgs/mock-banner1.jpg" href="google.com"/>
-      </a>
-      <ProductsContainer>
-        <FeaturedProduct>
-          <FeaturedPic src="/imgs/mock-pic1.png" alt="Table saw"/>
-          <div>
-            <FeatureTitle> Serra de Bancada 1800W 10 Pol.</FeatureTitle>
-            <FeaturedDescription>{" A Serra de Bancada possui estrutura reforçada e de fácil configuração, e rodas para transporte e armazenamento. Com guia de auto alinhamento e guia lateral auto-alinhada garantindo mais precisão."}</FeaturedDescription>
-          </div>
-        </FeaturedProduct>
-        <OtherProductsDiv>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 1</p>
-          </OtherProducts>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 2</p>
-          </OtherProducts>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 3</p>
-          </OtherProducts>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 4</p>
-          </OtherProducts>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 5</p>
-          </OtherProducts>
-          <OtherProducts >
-            <OtherPic></OtherPic>
-            <p>PRODUTOS SECUNDÁRIOS 6</p>
-          </OtherProducts>  
-        </OtherProductsDiv>
-      </ProductsContainer>
-    </div>
-  );
-}
-
-export default App;
-
-
+*/
