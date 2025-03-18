@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AiFillInstagram } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = styled.div`
 display: flex;
@@ -45,11 +46,19 @@ export default function HeaderComponent() {
 
     return(
     <Header>
-        <LogoImg  src="/imgs/logo-acobom.png"/>
+        <Link to="/">
+          <LogoImg  src="/imgs/logo-acobom.png"/>
+        </Link>
         <div>
-          <Button1>Máquinas</Button1>
-          <Button1>Telhas</Button1>
-          <Button1>Ferragens</Button1>
+          <Link to="/produtos/maquinas">
+            <Button1>Máquinas</Button1>  
+          </Link>
+          <Link to="/produtos/telhas">
+            <Button1>Telhas</Button1>
+          </Link>
+          <Link to="/produtos/ferragens">
+            <Button1>Ferragens</Button1>
+          </Link>
           <Button1>Fale Conosco</Button1>
           <Button1>Carreiras</Button1>
           <Button1>

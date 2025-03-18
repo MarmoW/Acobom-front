@@ -82,7 +82,9 @@ export default function FooterComponent(){
             <FooterButtons>Telhas</FooterButtons>
             <FooterButtons>Ferragens</FooterButtons>
             <FooterButtons>
-                <AiFillInstagram size={"2em"}/>
+                <a href="https://www.instagram.com/acobomoficial/" target="_blank" rel="noopener noreferrer">
+                    <AiFillInstagram size={"2em"}/>
+                </a>    
             </FooterButtons>
             <FooterButtons>
                 <FaWhatsapp size={"2em"}/>

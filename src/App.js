@@ -20,9 +20,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<FrontPage />} />
-        <Route path="/products/:type" element={<ProductsType/>}/>
-        <Route path="/products/:id" />
+        <Route path="/produtos/:type" element={<ProductsType/>}/>
+        <Route path="/produtos/:id" />
         <Route path="/carreiras" />
+        <Route path="/contato"/>
         <Route path="/404"/>
         <Route path="*"  />
       </Routes>

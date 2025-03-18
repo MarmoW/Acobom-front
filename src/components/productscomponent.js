@@ -61,8 +61,8 @@ color: #515151;
 export default function ProductsComponent() {
     return(
         <OtherProductsDiv>
-            {products.map((infos) => (
-            <OtherProducts >
+            {products.slice(0, 6).map((infos) => (
+            <OtherProducts key={infos.id} >
                 <OtherPic src={infos.image}/>
                 <div>
                     <OtherTitle>{infos.name}</OtherTitle>
