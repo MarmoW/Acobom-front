@@ -87,7 +87,8 @@ justify-content: center;
 align-items: center;
 
 `;
-
+const FwrdandBackButton = styled.button`
+`;
 const productsPerPage = 9;
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBLkP0c8GKihi6AiIP0GllQjF7RqnFeOXUoOSxf-rSC7Op2Jjuv4rKporhYtLlcslldi-2esemyN_1/pub?output=csv";
 
@@ -101,7 +102,7 @@ export default function ProductsType() {
         fetch(SHEET_URL)
           .then((response) => response.text())
           .then((csvData) => {
-            const rows = csvData.split("\n").slice(1); // Remove header row
+            const rows = csvData.split("\n").slice(1);
             const formattedData = rows.map((row) => {
               const [id, name, category, image, description] = row.split(",");
               return { id, name, category, image, description };
@@ -131,13 +132,13 @@ export default function ProductsType() {
 
     const handleNextPage = () => {
         if (currentPage < totalPages - 1) {
-          setCurrentPage(currentPage + 1); // Go to the next page
+          setCurrentPage(currentPage + 1);
         }
       };
 
     const handlePreviousPage = () => {
         if (currentPage > 0) {
-          setCurrentPage(currentPage - 1); // Go to the previous page
+          setCurrentPage(currentPage - 1);
         }
       };
 
@@ -156,8 +157,12 @@ export default function ProductsType() {
                                 </ProductsDiv>
                                 ))}
                     <ButtonsDiv>
-                    <button onClick={handlePreviousPage} disabled={currentPage === 0}>Previous</button>
-                    <button onClick={handleNextPage} disabled={currentPage === totalPages - 1}>Next</button>    
+                    <FwrdandBackButton onClick={handlePreviousPage} disabled={currentPage === 0}>
+                        Previous
+                    </FwrdandBackButton>
+                    <FwrdandBackButton onClick={handleNextPage} disabled={currentPage === totalPages - 1}>
+                        Next
+                    </FwrdandBackButton>    
                     </ButtonsDiv>                                
                 </ProductsMainDiv>
             <FooterComponent/>
