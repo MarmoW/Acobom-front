@@ -1,10 +1,8 @@
 import './App.css';
-import { GlobalStyles, ProductsContainer} from './components/styles';
-import HeaderComponent from "./components/headercomponent.js";
-import BannerComponent from "./components/bannercomponent.js";
-import FeaturedComponent from "./components/featuredcomponent.js";
-import ProductsComponent from "./components/productscomponent.js";
-import FooterComponent from "./components/footercomponent.js";
+import { GlobalStyles } from './components/styles';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FrontPage from './pages/frontpage.js';
+import ProductsType from "./pages/productstypes.js";
 
 
 function App() {
@@ -17,16 +15,19 @@ function App() {
   
 
   return (
-    <div className="App">
-      <GlobalStyles></GlobalStyles>
-      <HeaderComponent/>
-      <BannerComponent/>
-      <ProductsContainer>
-        <FeaturedComponent/>
-        <ProductsComponent/>
-      </ProductsContainer>
-      <FooterComponent/>
-    </div>
+  <>  
+    <GlobalStyles/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<FrontPage />} />
+        <Route path="/products/:type" element={<ProductsType/>}/>
+        <Route path="/products/:id" />
+        <Route path="/carreiras" />
+        <Route path="/404"/>
+        <Route path="*"  />
+      </Routes>
+    </Router>
+  </>  
   );
 }
 
