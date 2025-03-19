@@ -17,7 +17,7 @@ display: flex;
 align-items: start;
 justify-content: start;
 background-color: #ffffff;
-min-width: 20em;
+min-width: 18em;
 height: 15em;
 margin: 1em;
 border-radius: 20px;

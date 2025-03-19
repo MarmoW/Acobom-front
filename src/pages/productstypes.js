@@ -3,6 +3,7 @@ import { useParams, Navigate  } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HeaderComponent from "../components/headercomponent";
 import FooterComponent from "../components/footercomponent";
+import { MdArrowForwardIos, MdArrowBackIos  } from "react-icons/md";
 //import {products} from "../products-data/productsData.js";
 //import ProductsComponent from "../components/productscomponent";
 
@@ -79,16 +80,34 @@ const ButtonsDiv = styled.div`
 display: flex;
 position: relative;
 bottom: 1rem;
-
 width: 100% ;
 min-width: 100wh;
-
 justify-content: center;
 align-items: center;
 
 `;
+
 const FwrdandBackButton = styled.button`
+color: #fe7100;
+margin-left: 1rem;
+margin-right: 1rem;
+
+&:disabled {
+    color: #515151;
+    border-color: #515151;
+    cursor: not-allowed;
+    
+  }
+
+  &:hover:not(:disabled) {
+    background: #fe7100;
+    
+    &::before {
+      border-color: white;
+    }
+  }
 `;
+
 const productsPerPage = 9;
 const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBLkP0c8GKihi6AiIP0GllQjF7RqnFeOXUoOSxf-rSC7Op2Jjuv4rKporhYtLlcslldi-2esemyN_1/pub?output=csv";
 
@@ -157,12 +176,12 @@ export default function ProductsType() {
                                 </ProductsDiv>
                                 ))}
                     <ButtonsDiv>
-                    <FwrdandBackButton onClick={handlePreviousPage} disabled={currentPage === 0}>
-                        Previous
-                    </FwrdandBackButton>
-                    <FwrdandBackButton onClick={handleNextPage} disabled={currentPage === totalPages - 1}>
-                        Next
-                    </FwrdandBackButton>    
+                      <FwrdandBackButton onClick={handlePreviousPage} disabled={currentPage === 0 }>
+                        <MdArrowBackIos size={"2em"}/>
+                      </FwrdandBackButton>
+                      <FwrdandBackButton onClick={handleNextPage} disabled={currentPage === totalPages - 1}>
+                        <MdArrowForwardIos size={"2em"}/>
+                      </FwrdandBackButton>    
                     </ButtonsDiv>                                
                 </ProductsMainDiv>
             <FooterComponent/>
